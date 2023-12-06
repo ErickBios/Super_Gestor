@@ -17,6 +17,7 @@ Route::get('/','PrincipalController@principal')->name('site.index');
 Route::get('/SobreNos','SobreNosController@sobreNos')->name('site.sobrenos');
 
 Route::get('/Contato','ContatoController@contato')->name('site.contato');
+Route::post('/Contato','ContatoController@contato')->name('site.contato');
 
 Route::get('/login', function(){ return 'Login'; })->name('site.login');
 
