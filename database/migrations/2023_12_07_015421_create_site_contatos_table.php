@@ -22,6 +22,7 @@ class CreateSiteContatosTable extends Migration
             $table->integer('motivo_contato');
             $table->text('mensagem');
         });
+        
     }
 
     /**
