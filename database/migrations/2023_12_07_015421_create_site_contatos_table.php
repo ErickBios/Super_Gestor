@@ -13,6 +13,7 @@ class CreateSiteContatosTable extends Migration
      */
     public function up()
     {
+        /*Criando minha tabela do banco de dados */
         Schema::create('site_contatos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
@@ -22,7 +23,7 @@ class CreateSiteContatosTable extends Migration
             $table->integer('motivo_contato');
             $table->text('mensagem');
         });
-        
+
     }
 
     /**
